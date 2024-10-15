@@ -1,0 +1,180 @@
+/* Corpo da página */
+body {
+    background-color: #F5F5DC; /* Cor de fundo no modo claro */
+    color: #8B4513; /* Cor do texto no modo claro */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+}
+
+/* Menu */
+.menu {
+    width: 200px;
+    background-color: #F5DEB3; /* Cor de fundo do menu no modo claro */
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho do menu */
+.menu-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #8B4513; /* Cor do título no modo claro */
+    margin: 0;
+}
+
+.menu-header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+/* Perfil do usuário */
+.profile {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile p {
+    color: #8B4513; /* Cor do texto do nome do usuário no modo claro */
+}
+
+/* Links do menu */
+.menu a {
+    color: #8B4513; /* Cor dos links no modo claro */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFE4C4; /* Fundo dos links no modo claro */
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #F5DEB3; /* Cor do fundo ao passar o mouse */
+}
+
+/* Estilização do contêiner do botão */
+.theme-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Botão de alternância de tema */
+.theme-toggle {
+    border: none;
+    border-radius: 50px; /* Arredondado */
+    background-color: #8B4513; /* Tom caqui */
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Animação de mudança de ícone */
+.theme-toggle img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Transição suave para o movimento */
+}
+
+/* Modo escuro - mudando cor de fundo */
+body.dark-mode .theme-toggle {
+    background-color: #333; /* Preto e cinza */
+}
+
+body.dark-mode .theme-toggle img {
+    transform: translateX(15px); /* Move o ícone para a direita */
+}
+
+/* Centralização do título e barra de pesquisa */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #8B4513; /* Título caqui no modo claro */
+}
+
+.search-bar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #8B4513;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+    background-color: #2C2C2C; /* Cor de fundo no modo escuro */
+    color: #FFFFFF; /* Cor do texto no modo escuro */
+}
+
+body.dark-mode .menu {
+    background-color: #3C3C3C; /* Cor do menu no modo escuro */
+}
+
+body.dark-mode .menu a {
+    background-color: #2C2C2C; /* Fundo dos links no modo escuro */
+    color: #FFFFFF; /* Fontes claras no menu */
+}
+
+body.dark-mode .menu a:hover {
+    background-color: #3C3C3C; /* Cor do fundo ao passar o mouse no modo escuro */
+}
+
+body.dark-mode .menu-header h1,
+body.dark-mode .content h1 {
+    color: #000000; /* Título em preto no modo escuro */
+}
+
+body.dark-mode .profile p {
+    color: #FFFFFF; /* Nome do usuário em branco no modo escuro */
+}
+
+body.dark-mode .search-bar input[type="text"] {
+    background-color: #000000; /* Barra de pesquisa em preto no modo escuro */
+    color: #FFFFFF; /* Cor do texto da barra de pesquisa no modo escuro */
+    border: 2px solid #FFFFFF; /* Borda da barra de pesquisa no modo escuro */
+}
+
+/* Modo Claro */
+body.light-mode .menu-header h1,
+body.light-mode .content h1 {
+    color: #8B4513; /* Título em caqui no modo claro */
+}
+
+body.light-mode .search-bar input[type="text"] {
+    background-color: #FFFFFF; /* Barra de pesquisa clara no modo claro */
+    color: #8B4513; /* Cor do texto na barra de pesquisa no modo claro */
+}
